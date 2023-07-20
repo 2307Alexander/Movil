@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentsAdmin.ActualizarSalaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/lbProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="UPDATE SALA"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnActualizarU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="428dp" />
+
+    <EditText
+        android:id="@+id/txtDescripcionU"
+        android:layout_width="360dp"
+        android:layout_height="143dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="DESCRIPCION"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/txtTiempoU"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbProducto"
+        app:layout_constraintVertical_bias="0.81"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtPrecioU"
+        android:layout_width="183dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnActualizarU"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcionU"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <ImageView
+        android:id="@+id/agg_imagenU"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnSubirImagenU"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="28dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/agregar_foto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubirImagenU"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecioU"
+        app:layout_constraintVertical_bias="0.136"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnSubirImagenU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:text="Subir"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiempoU"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtTiempoU"
+        android:layout_width="187dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Tiempo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnActualizarU"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPrecioU"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtNombreU"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="NOMBRE"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtDescripcionU"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

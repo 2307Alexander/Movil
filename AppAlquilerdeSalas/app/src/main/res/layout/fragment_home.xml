@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4CEC8"
+    tools:context=".FragmentsUser.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="287dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/eventosalas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="409dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Simplificamos la organización de tu próximo evento"
+        android:textAlignment="center"
+        android:textColor="#CC0348"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="346dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Organizar un evento implica muchos detalles logísticos y una carga grande de preocupaciones. Déjalo en nuestras manos y nuestro experto equipo hotelero, la ejecución de tus convenciones o talleres. Nosotros nos enfocamos en la logística.  "
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

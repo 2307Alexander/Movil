@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/crearSalaFragment"
+        android:name="com.example.appalquilerdesalas.FragmentsAdmin.CrearSalaFragment"
+        android:label="fragment_crear_sala2"
+        tools:layout="@layout/fragment_crear_sala" >
+        <action
+            android:id="@+id/action_crearSalaFragment_to_fragmentListadoSala"
+            app:destination="@id/listSalaAdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actualizarSalaFragment"
+        android:name="com.example.appalquilerdesalas.FragmentsAdmin.ActualizarSalaFragment"
+        android:label="fragment_update_sala"
+        tools:layout="@layout/fragment_actualizar_sala" >
+        <action
+            android:id="@+id/action_updateSala_to_verSala"
+            app:destination="@id/visualizarSalaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/visualizarSalaFragment"
+        android:name="com.example.appalquilerdesalas.FragmentsAdmin.VisualizarSalaFragment"
+        android:label="fragment_ver_sala"
+        tools:layout="@layout/fragment_visualizar_sala" >
+        <action
+            android:id="@+id/action_verSala_to_updateSala"
+            app:destination="@id/actualizarSalaFragment" />
+        <action
+            android:id="@+id/action_verSala_to_fragmentListadoSala"
+            app:destination="@id/listSalaAdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.appalquilerdesalas.FragmentsUser.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/listSalaAdminFragment"
+        android:name="com.example.appalquilerdesalas.FragmentsAdmin.ListSalaAdminFragment"
+        android:label="fragment_listado_sala"
+        tools:layout="@layout/fragment_list_sala_admin" >
+        <action
+            android:id="@+id/action_fragmentListadoSala_to_verSala"
+            app:destination="@id/visualizarSalaFragment" />
+        <action
+            android:id="@+id/action_fragmentListadoSala_to_crearSalaFragment"
+            app:destination="@id/crearSalaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.appalquilerdesalas.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+</navigation>
